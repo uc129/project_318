@@ -1,0 +1,20 @@
+
+%% Find Command %%
+curl localhost:8080/customers/3
+
+
+
+%%Post command%%
+$ curl -X POST localhost:8080/customers -H 'Content-type:application/json' -d '{"companyName": "Tata Motors", "address": "Banglore","country":"India"}'
+
+%%Put Command%%
+curl -X PUT localhost:8080/customers/3 -H 'Content-type:application/json' -d '{"companyName": "Tata Motors", "address": "Mumbai","country":"India"}'
+
+
+%%Delete Command%%
+curl -X DELETE localhost:8080/customers/4
+
+
+%%Run Command%%
+
+./mvnw clean spring-boot:run  
